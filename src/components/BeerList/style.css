@@ -1,0 +1,10 @@
+.beer-list {
+  max-width: 1240px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 720px) {
+  .beer-list {
+    max-width: 90%;
+  }
+}

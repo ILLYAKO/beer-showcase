@@ -1,0 +1,247 @@
+.card {
+  background: #f4f4f4;
+  border-radius: 15px;
+  border: none;
+  min-height: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.beer-row-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beer-card-item-zoomed-in {
+  animation: card-animation-zoomedin linear 2s;
+}
+@keyframes card-animation-zoomedin {
+  from {
+    min-height: 500;
+  }
+  to {
+    min-height: 800;
+  }
+}
+
+.beer-card-item-zoomed-out {
+  min-height: 500;
+  animation: card-animation-zoomedout ease-in-out 1.5s;
+}
+@keyframes card-animation-zoomedout {
+  from {
+    max-height: 800;
+  }
+  to {
+    min-height: 500;
+  }
+}
+
+.beer-img-card {
+  min-height: 400px;
+  background-position: 50% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.beer-card-right {
+  align-self: center;
+}
+
+.beer-card-right h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 49px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.beer-card-right h3 {
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  border: none;
+  box-shadow: none;
+}
+.beer-btn {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  width: 300px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+.beer-btn:hover {
+  color: #fff;
+  background-color: #000000;
+}
+
+.beer-btn-animation-fade-in {
+  border: none;
+  visibility: visible;
+  opacity: 1;
+  animation: btn-animation-fadein ease-in-out 2s;
+}
+@keyframes btn-animation-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.beer-btn-animation-fade-out {
+  border: none;
+  opacity: 0;
+  animation: btn-animation-fadeout ease-in-out 2s;
+}
+@keyframes btn-animation-fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.beer-descripttion-bold {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  line-height: 23px;
+}
+
+.beer-descripttion {
+  font-size: 20px;
+  letter-spacing: 0.25em;
+  line-height: 23px;
+}
+
+.beer-det-text-fade-out {
+  opacity: 0;
+  animation: text-animation-fadeout ease-in-out 2s;
+}
+@keyframes text-animation-fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.beer-det-text-fade-in {
+  opacity: 1;
+  animation: text-animation-fadein ease-in-out 2s;
+}
+@keyframes text-animation-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .beer-row-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beer-img-card {
+    margin: 10px auto;
+  }
+
+
+
+  button.beer-btn {
+    max-width: 80%;
+    margin: 10px auto 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .beer-card-right h2 {
+    text-align: center;
+  }
+
+  .beer-card-right h3 {
+    text-align: center;
+  }
+}
+
+.jello-horizontal {
+	animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.shake-lr:hover {
+	animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-lr {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}

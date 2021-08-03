@@ -1,0 +1,36 @@
+.beer-form-search {
+  margin-top: 37px;
+  text-align: center;
+}
+
+.beer-form-search input {
+  max-width: 1240px;
+  height: 60px;
+  font-size: 25px;
+  align-items: center;
+  background: #f4f4f4;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+input[type="text"] {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form-control::placeholder {
+  color: #000000;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 720px) {
+  .beer-form-search {
+    margin: 5px auto;
+    max-width: 90%;
+  }
+}
